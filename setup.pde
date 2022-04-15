@@ -14,7 +14,6 @@ void test() {
   assert n1.chiffre(-1) == 0;
   println("constructeur et accesseurs ok");
 
-  // À compléter avec des tests pour les autres méthodes
   assert n1.toString().equals("102");
 
   GrandNaturel n2 = new GrandNaturel(102);

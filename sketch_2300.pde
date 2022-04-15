@@ -11,7 +11,7 @@ class GrandNaturel {
   GrandNaturel(GrandNaturel gn) {
       this(gn.chiffres);
   }
-  // Crée un grand naturel égal à c
+
   GrandNaturel(int c) {
     // on s'assure que c est positif
   assert c >= 0 :
@@ -153,7 +153,6 @@ class GrandNaturel {
   }
 
   GrandNaturel mult (GrandNaturel n) {
-    //GrandNaturel result = new GrandNaturel(this);
     GrandNaturel resultA = new GrandNaturel(this);
     int resultB = 0;
     for (int i = 0; i < chiffres.length; i++) {
