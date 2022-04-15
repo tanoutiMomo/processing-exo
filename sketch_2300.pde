@@ -154,7 +154,7 @@ class GrandNaturel {
 
   GrandNaturel mult (GrandNaturel n) {
     //GrandNaturel result = new GrandNaturel(this);
-    GrandNaturel resultA = new GrandNaturel(0);
+    GrandNaturel resultA = new GrandNaturel(this);
     int resultB = 0;
     for (int i = 0; i < chiffres.length; i++) {
       resultA = resultA.plus(powerOf(10, i).mult(chiffres[i]));

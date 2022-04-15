@@ -30,8 +30,8 @@ void test() {
   assert n1.plus(789000).egal(new GrandNaturel(102 + 789000));
 
   GrandNaturel c = new GrandNaturel(759);
-  //assert c.mult(2).egal(new GrandNaturel(1518));
-  assert c.mult(new GrandNaturel(1518)).egal(new GrandNaturel(1152162));
+  assert c.mult(2).egal(new GrandNaturel(1518));
+  assert c.mult(new GrandNaturel(1518)).egal(new GrandNaturel(1165824));
 
   GrandNaturel n15 = new GrandNaturel(15);
   GrandNaturel n16 = n15.plus(1);
@@ -39,6 +39,5 @@ void test() {
   assert n16.fact().egal(n15.fact().mult(n16));
   
   assert fibo(10).toString().equals("55");
-  //println(fibo(100).toString());
-  //assert fibo(100).toString().equals("354224848179261915075");
+  assert fibo(100).toString().equals("354224848179261915075");
 }
